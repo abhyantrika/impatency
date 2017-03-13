@@ -1,0 +1,33 @@
+
+<html>
+
+<link href="../static/css/patent_detail.css" rel="stylesheet">
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<body>
+
+<div class="container">
+    <div class="row">
+            <div class="page-header">
+    </div>
+                <h2> {{results['title']}} </h2>
+            </div>
+
+      <div class="bold-data">Applicants :    </div>
+      <div class="normal-data"> {{ results['applicants']}}</div>
+      <div class="bold-data">Inventors :   </div>
+      <div class="normal-data"> {{results['inventors']}}</div>
+      <div class="bold-data">Applicantion No :    </div>
+      <div class="normal-data"> {{results['application_no']}}</div>
+      <div class="bold-data">Date of filing :   </div>
+      <div class="normal-data"> {{results['date_of_filing']}}</div>
+      <div class="bold-data">Publication Date:  </div>
+      <div class="normal-data"> {{results['publication_date']}}</div>
+
+    <div >
+      <div class="abstract" >Abstract :</div>
+      <p> {{results['title']}}<span style="background-color: #000000"> {{results['abstract']}}</p>
+    </div>
+</div>
+
+</body>
+<script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
